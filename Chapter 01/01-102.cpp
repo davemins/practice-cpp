@@ -2,15 +2,15 @@
 
 int main(void)
 {
-    char name, number;
+    char name[50];
+    char number[50];
 
-    std::cout<<"ì´ë¦„ì„ ì…ë ¥í•˜ì‹œì˜¤: ";
-    std::cin<<name;
-    std::cout<<"ì „í™”ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ";
-    std::cin<<number;
+    std::cout<<"ÀÌ¸§À» ÀÔ·ÂÇÏ½Ã¿À: ";
+    std::cin>>name;
+    std::cout<<"ÀüÈ­¹øÈ£¸¦ ÀÔ·ÂÇÏ½Ã¿À: ";
+    std::cin>>number;
 
-    std::cout<<"ì´ë¦„: "<<name;
-    std::cout<<"ì „í™”ë²ˆí˜¸: "<<number;
-
+    std::cout<<"´ç½ÅÀÇ ÀÌ¸§: "<<name<<std::endl;
+    std::cout<<"´ç½ÅÀÇ ÀüÈ­¹øÈ£: "<<number<<std::endl;
     return 0;
 }
