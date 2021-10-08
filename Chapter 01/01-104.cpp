@@ -1,30 +1,25 @@
 #include <iostream>
-using namespace std;
 
-int main()
+int Cal(int sales)
 {
-    int money, pay;
+    return (int)(50+sales*0.12);
+}
 
-    cout<<"판매 금액을 만원 단위로 입력(-1 to end): "
-    cin>>money;
+int main(void)
+{
+    int sales;
 
-    pay=50+(money*0.12);
-
-    while (1)
+    while(1)
     {
-    
-        {
-            /* code */
-        }
-        
-        if(money=-1);
-            cout<<"프로그램을 종류합니다."
+        std::cout<<"판매 금액을 만원 단위로 입력(-1 to end): ";
+        std::cin>>sales;
+        if(sales==-1)
             break;
-
-        else
-            cout<<"이번 달 급여: "<<pay;
+        
+        std::cout<<"이번 달 급여: ";
+        std::cout<<Cal(sales)<<"만원"<<std::endl;
     }
+    std::cout<<"프로그램을 종료합니다."<<std::endl;
 
     return 0;
-    
 }
